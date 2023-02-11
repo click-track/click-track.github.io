@@ -1,1 +1,19 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>...</title>
+    </head>
+    <body>
+      <p>Please wait</p>
+        <script>
+            setTimeout(function() {
+            if(window.location.href.includes(".(")) {
+                document.location.href = atob(window.location.href.split(".(")[1]);
+            } else {
+                document.location.href = atob(window.location.href.split("#.")[1]);
+            }
+            }, 4000);
+        </script>
+    </body>
+</html>
